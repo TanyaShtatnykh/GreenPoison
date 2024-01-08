@@ -1,0 +1,102 @@
+.lunch {
+  width: 100%;
+  background-image: url(../img/bottle.svg);
+  background-size: 182px 314px;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  &__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 12px 14px;
+  }
+  &__title {
+    margin-bottom: 12px;
+    font-size: px-to-em(14);
+    line-height: lh-to-pct(18, 14);
+    font-weight: 600;
+    color: #FF540D;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #FF540D;
+  }
+  &__left-block {
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 1;
+    row-gap: 8px;
+  }
+  &__dish-text {
+    font-size: px-to-em(20);
+    line-height: lh-to-pct(20, 26);
+    font-weight: 900;
+    color: #B1F83C;
+    text-transform: uppercase;
+
+    &:last-child {
+      font-size: px-to-em(12);
+      line-height: lh-to-pct(16, 12);
+    }
+  }
+  &__right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 12px;
+    border-left: 2px solid #FF540D;
+  }
+  &__discount-text {
+    margin-bottom: 8px;
+    font-size: px-to-em(10);
+    line-height: lh-to-pct(14, 10);
+    font-weight: 400;
+  }
+  &__comment {
+    margin-bottom: 8px;
+    font-size: px-to-em(8);
+    line-height: lh-to-pct(10, 8);
+    font-weight: 400;
+    color: #FF540D;
+  }
+  &__reserve-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1.5px solid #B1F83C;
+    font-size: px-to-em(13);
+    line-height: lh-to-pct(17, 13);
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    &::after {
+      content: " ";
+      width: 12px;
+      height: 12px;
+      margin: 1px 0 0 6px;
+      background-image: url(../img/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  &__price {
+    font-size: px-to-em(20);
+    line-height: lh-to-pct(26, 20);
+    font-weight: 600;
+    color: #B1F83C;
+    text-transform: uppercase;
+  }
+}

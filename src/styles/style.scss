@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;900&display=swap');
+@import 'mixins';
+
+
+body {
+  background-color: #010F01;
+}
+body, ul, ol {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tektur', sans-serif;
+  color: #ffffff;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input {
+  font-family: 'Tektur', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@import './src/blocks/header/header';
+@import './src/blocks/main-screen/main-screen';
+@import './src/blocks/concept/concept';
+@import './src/blocks/about/about';
+@import './src/blocks/lunch/lunch';
+@import './src/blocks/product/product';
+@import './src/blocks/top-menu/top-menu';
+@import './src/blocks/promo/promo';

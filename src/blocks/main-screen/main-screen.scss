@@ -1,0 +1,108 @@
+.main-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  &__logo {
+    width: 96px;
+    height: 138px;
+    margin-bottom: 14px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 20px;
+  }
+  &__title {
+    display: none;
+  }
+  &__subtitle {
+    margin-bottom: 8px;
+    font-size: 1em;
+    line-height: lh-to-pct(21, 16);
+    font-weight: 400;
+    color: #FF540D;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__description {
+    max-width: 170px;
+    margin-bottom: 12px;
+    font-size: px-to-em(10);
+    line-height: lh-to-pct(13, 10);
+    font-weight: 400;
+    text-align: center;
+  }
+  &__btn-reserve {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1.5px solid #B1F83C;
+    font-size: px-to-em(13);
+    line-height: lh-to-pct(17, 13);
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    &::after {
+      content: " ";
+      width: 12px;
+      height: 12px;
+      margin: 1px 0 0 6px;
+      background-image: url(../img/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  &__advantages {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4px;
+    padding-top: 8px;
+    border-top: 1px solid #275026;
+  }
+  &__advantages-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 66px;
+    font-size: px-to-em(8);
+    line-height: lh-to-pct(10, 8);
+    font-weight: 400;
+    text-align: center;
+    &::before {
+      content: "";
+      width: 44px;
+      height: 44px;
+      margin-bottom: 4px;
+      border-radius: 8px;
+      background-color: #275026;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:not(:first-child) {
+      margin-left: 60px;
+    }
+    &--bar {
+      &::before {
+        background-image: url(../img/bar-icon.svg);
+      }
+    }
+    &--food {
+      &::before {
+        background-image: url(../img/food-icon.svg);
+      }
+    }
+    &--chair {
+      &::before {
+        background-image: url(../img/chair-icon.svg);
+      }
+    }
+  }
+}

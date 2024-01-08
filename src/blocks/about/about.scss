@@ -1,0 +1,89 @@
+.about {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: px-to-em(16);
+    line-height: lh-to-pct(21, 16);
+    font-weight: 900;
+    color: #FF540D;
+  }
+  &__description {
+    margin-bottom: 16px;
+    font-size: px-to-em(12);
+    line-height: lh-to-pct(16, 12);
+    font-weight: 600;
+    text-align: center;
+  }
+  .slick-slider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .slick-list {
+    padding-bottom: 10px;
+  }
+  .slick-slide {
+    width: 146px; 
+    height: 114px;
+    border-radius: 20px;
+    margin: 0 6px;
+    object-fit: cover;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      width: 60px;
+      height: 1px;
+    }
+    button {
+      width: 60px;
+      height: 1px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: #fff;
+      opacity: 0.25;
+      color: transparent;
+      transition: 0.3s;
+    }
+  }
+  .slick-active button {
+    opacity: 1;
+  }
+  &__subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: px-to-em(10);
+    line-height: lh-to-pct(13, 10);
+    font-weight: 400;
+  }
+  &__subscribe-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    padding: 6px 12px;
+    border-radius: 7.5px;
+    border: 1px solid #B1F83C;
+    font-size: px-to-em(10);
+    line-height: lh-to-pct(13, 10);
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+  }
+  &__btn-icon {
+    margin-right: 4px;
+  }
+}

@@ -1,0 +1,10 @@
+mixin product(photo, name, text, price)
+  .product&attributes(attributes)
+    .product__block.product__block--photo
+      if photo
+        img.product__photo(src=`img/${photo}`, alt=" ")
+      .product__content
+        p.product__description=text
+    .product__block
+      h3.product__name=name
+      p.product__price=price

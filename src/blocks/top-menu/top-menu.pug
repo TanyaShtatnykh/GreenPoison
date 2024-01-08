@@ -1,0 +1,12 @@
+mixin top-menu(modifier)
+  section.top-menu&attributes(attributes)
+    h2.top-menu__title Меню
+    p.top-menu__text Наши самые топовые позиции
+    .top-menu__products
+      +product("tf1.jpg", "Название позиции", "Описание позиции", "Цена")
+      +product("tf2.jpg", "Название позиции", "Описание позиции", "Цена")
+      +product("tf3.jpg", "Название позиции", "Описание позиции", "Цена")
+      +product("tf4.jpg", "Название позиции", "Описание позиции", "Цена")
+      +product("tf5.jpg", "Название позиции", "Описание позиции", "Цена")
+      +product("tf6.jpg", "Название позиции", "Описание позиции", "Цена")
+    a.top-menu__link(href="#") Посмотреть все 

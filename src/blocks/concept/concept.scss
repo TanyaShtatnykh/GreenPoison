@@ -1,0 +1,20 @@
+.concept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 8px 0;
+  background-image: url(../img/web.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(31, 24);
+    font-weight: 900;
+    color: #B1F83C;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,16 @@
+mixin lunch(modifier)
+  section.lunch&attributes(attributes)
+    .lunch__area
+      h2.lunch__title Бизнес ланч
+      .lunch__wrapper
+        .lunch__left-block
+          p.lunch__dish-text Салат
+          p.lunch__dish-text Суп
+          p.lunch__dish-text Горячее
+          p.lunch__dish-text + чай
+        .lunch__right-block
+          p.lunch__discount-text Со вторника по пятницу до 18-00
+          p.lunch__comment А так же
+          p.lunch__discount-text Скидка на бар 10%
+          a.lunch__reserve-btn(href="#") Забронировать стол
+      .lunch__price 420 руб

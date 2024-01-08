@@ -1,0 +1,12 @@
+mixin about(title, description, photos, text, link, icon)
+  .about&attributes(attributes)
+    h3.about__title=title
+    p.about__description=description
+    .about__slider
+      each photo in photos
+        img.about__slide(src=`img/${photo}.png`, alt=" ")
+    .about__subscribe
+      p.about__text=text
+      a.about__subscribe-btn(href=link) 
+        img.about__btn-icon(src=`img/${icon}.svg`)
+        | Перейти
