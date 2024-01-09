@@ -160,6 +160,27 @@
           <p class="promo__action">Голосуй за его проведение в нашем инстаграме и тогда:</p>
           <p class="promo__text">в пятницу с 18-00 игристые и обычные вина можно будет испить от 160 до 450 рублей за&nbsp;бокал</p><a class="promo__link" href="#">Проголосовать</a>
         </section>
+        <section class="contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__area">
+            <div class="contacts__wrapper">
+              <div class="contacts__block">
+                <h3 class="contacts__subtitle">Забронировать стол</h3>
+                <form class="contacts__form">
+                  <input class="contacts__field contacts__field--name" type="text" placeholder="Как вас зовут? *" minlength="2" required>
+                  <input class="contacts__field contacts__field--phone" type="text" placeholder="Номер телефона *" maxlength="12" required>
+                  <div class="contacts__fields">
+                    <input class="contacts__subfield" type="text" placeholder="День" onfocus="(this.type = 'date')">
+                    <input class="contacts__subfield" type="text" placeholder="Время" onfocus="(this.type = 'time')">
+                    <input class="contacts__subfield contacts__subfield--big" type="number" placeholder="Количество персон" min="1" max="30">
+                  </div>
+                  <input class="contacts__field" type="text" placeholder="Ваши пожелания">
+                  <button class="contacts__reserve-btn" type="submit">Забронировать стол</button>
+                </form>
+              </div><img class="contacts__map" src="" alt="">
+            </div>
+          </div>
+        </section>
     </main>
     <script src="js/scripts.js"></script>
   </body>
