@@ -35,6 +35,7 @@ inputPhone.oninput = function () {
 
 
 
+
 var menu = $('.header__menu');
 var burgerBtn = $('.header__burger-btn');
 

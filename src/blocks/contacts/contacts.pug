@@ -15,20 +15,25 @@ mixin contacts(modifier)
             input.contacts__field(type="text" placeholder="Ваши пожелания")
             button.contacts__reserve-btn(type="submit") Забронировать стол
         img.contacts__map(src="", alt="")
-      //- ul.contacts__list
-      //-   li.contacts__item
-      //-     h3.contacts__subtitle Звоните нам
-      //-     p.contacts__text Мы всегда рады быстро и оперативно ответить на любой вопрос
-      //-     a.contacts__link(href="tel:89633156134") +79633156134
-      //-   li.contacts__item
-      //-     h3.contacts__subtitle Пишите нам
-      //-     p.contacts__text Оставляйте отзывы, пишите предложения и пожелания. Мы приветствуем контакт с гостями и всегда выходим на связь.
-      //-     .contacts__links
-      //-       a.contacts__link(href="#")
-      //-       a.contacts__link(href="#") 
-      //-   li.contacts__item
-      //-     h3.contacts__subtitle Приходите к нам
-      //-     p.contacts__text Не только встретим вас с душой и улыбкой, но и сделаем вечер классным и запоминающимся.
-      //-     .contacts__info
-      //-       a.contacts__link(href="#") Разъезжая 26-28Б
-      //-       p.contacts__time Ежедневно с 12-00 до 02-00
+      ul.contacts__list
+        li.contacts__item
+          h3.contacts__subtitle Звоните нам
+          .contacts__content
+            p.contacts__text Мы всегда рады быстро и&nbsp;оперативно ответить на&nbsp;любой вопрос
+            a.contacts__link.contacts__link--phone(href="tel:89633156134")
+              span.contacts__link-text +79633156134
+        li.contacts__item
+          h3.contacts__subtitle Пишите нам
+          .contacts__content
+            p.contacts__text Оставляйте отзывы, пишите предложения и пожелания. Мы&nbsp;приветствуем контакт с&nbsp;гостями и всегда выходим на&nbsp;связь.
+            .contacts__links
+              a.contacts__link.contacts__link--vk(href="#")
+              a.contacts__link.contacts__link--ig(href="#") 
+        li.contacts__item
+          h3.contacts__subtitle Приходите к нам
+          .contacts__content
+            p.contacts__text Не только встретим вас с душой и улыбкой, но и сделаем вечер классным и запоминающимся.
+            .contacts__info
+              a.contacts__link.contacts__link--address(href="#") 
+              span.contacts__link-text Разъезжая 26-28Б
+          p.contacts__time Ежедневно с 12-00 до 02-00

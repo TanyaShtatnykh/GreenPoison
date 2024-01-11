@@ -1,0 +1,13 @@
+mixin footer(modifier)
+  footer.footer&attributes(attributes)
+    .footer__area
+      a.footer__link-main(href="#") На главную
+      ul.footer__links-list
+        li.footer__link-item: a.footer__link.footer__link--reserve(href="#") Забронировать стол
+        li.footer__link-item: a.footer__link.footer__link--ig(href="#") Инстаграм
+        li.footer__link-item: a.footer__link.footer__link--vk(href="#") Вконтакте
+      a.footer__logo-link: img.footer__logo(src="img/logo.svg", alt="Logo")
+      ul.footer__menu-list
+          li.footer__menu-item: a.footer__menu-link(href="#") О нас
+          li.footer__menu-item: a.footer__menu-link(href="#") Меню
+          li.footer__menu-item: a.footer__menu-link(href="#") Контакты
