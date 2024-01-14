@@ -126,6 +126,9 @@
         height: 54px;
         background-size: 18px 18px;
       }
+      &:not(:first-child) {
+        margin-left: 38px;
+      }
     }
   }
   @media screen and (min-width: 460px) {
