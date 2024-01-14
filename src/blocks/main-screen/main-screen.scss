@@ -70,7 +70,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 80px;
+    max-width: 68px;
     font-size: px-to-em(8);
     line-height: lh-to-pct(10, 8);
     font-weight: 400;
@@ -86,7 +86,7 @@
       background-position: center;
     }
     &:not(:first-child) {
-      margin-left: 60px;
+      margin-left: 42px;
     }
     &--bar {
       &::before {
@@ -119,6 +119,7 @@
       font-size: px-to-em(12);
     }
     &__advantages-item {
+      max-width: 80px;
       font-size: px-to-em(10);
       &::before {
         width: 54px;
