@@ -1,16 +1,15 @@
 mixin header(modifier)
-  header.header&attributes(attributes)
-    .header__area
-      nav.header__menu
-        ul.header__menu-list
-          li.header__menu-item: a.header__menu-link(href="#") О нас
-          li.header__menu-item: a.header__menu-link(href="#") Меню
-          li.header__menu-item: a.header__menu-link(href="#") Контакты
-      .header__burger-btn
-        .header__burger-line
-        .header__burger-line
-        .header__burger-line
-        .header__burger-line
-      .header__info
-        a.header__contact.header__contact--phone(href="tel:89633156134") +7-963-315-61-34
-        a.header__contact.header__contact--address(href="https://2gis.ru/spb/inside/5348660212718405/firm/70000001082592780?m=30.349349%2C59.923608%2F19.3%2Fr%2F-0.71") Разъезжая 26-28Б
+  header.header&attributes(attributes)#header
+    nav.header__menu
+      ul.header__menu-list
+        li.header__menu-item: a.header__menu-link(href="#concept") О нас
+        li.header__menu-item: a.header__menu-link(href="#") Меню
+        li.header__menu-item: a.header__menu-link(href="#contacts") Контакты
+    .header__burger-btn
+      .header__burger-line
+      .header__burger-line
+      .header__burger-line
+      .header__burger-line
+    .header__info
+      a.header__contact.header__contact--phone(href="tel:89633156134") +7-963-315-61-34
+      a.header__contact.header__contact--address(href="https://2gis.ru/spb/inside/5348660212718405/firm/70000001082592780?m=30.349349%2C59.923608%2F19.3%2Fr%2F-0.71") Разъезжая 26-28Б

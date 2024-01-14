@@ -4,10 +4,11 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 8px 0;
+  padding: 0 8px;
   background-image: url(../img/web.png);
   background-position: top left;
   background-repeat: no-repeat;
+  background-size: 170px auto;
 
   &__title {
     margin-bottom: 12px;
@@ -16,5 +17,43 @@
     font-weight: 900;
     color: #B1F83C;
     text-transform: uppercase;
+  }
+  @media screen and (min-width: 460px) {
+    background-size: 260px auto;
+  }
+  @media screen and (min-width: 576px) {
+    background-size: 280px auto;
+    &__title {
+      margin-bottom: 16px;
+      font-size: px-to-em(32);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 970px;
+    background-size: 300px auto;
+    &__title {
+      font-size: px-to-em(36);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    background-size: 360px auto;
+    &__title {
+      font-size: px-to-em(42);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+    padding: 0 80px 20px;
+    background-size: 450px auto;
+    &__title {
+      font-size: px-to-em(52);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    background-size: 530px auto;
+    &__title {
+      font-size: px-to-em(60);
+    }
   }
 }

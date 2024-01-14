@@ -1,67 +1,34 @@
 .about {
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   padding-bottom: 20px;
 
+  &__area, &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__title {
     margin-bottom: 12px;
-    font-size: px-to-em(16);
-    line-height: lh-to-pct(21, 16);
-    font-weight: 900;
-    color: #FF540D;
-  }
-  &__description {
-    margin-bottom: 16px;
     font-size: px-to-em(12);
     line-height: lh-to-pct(16, 12);
     font-weight: 600;
+    color: #FF540D;
+  }
+  &__description {
+    margin-bottom: 12px;
+    font-size: px-to-em(12);
+    line-height: lh-to-pct(16, 12);
+    font-weight: 400;
     text-align: center;
-  }
-  .slick-slider {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .slick-list {
-    padding-bottom: 10px;
-  }
-  .slick-slide {
-    width: 146px; 
-    height: 114px;
-    border-radius: 20px;
-    margin: 0 6px;
-    object-fit: cover;
-  }
-  .slick-dots {
-    display: flex;
-    justify-content: space-evenly;
-    li {
-      width: 60px;
-      height: 1px;
-    }
-    button {
-      width: 60px;
-      height: 1px;
-      padding: 0;
-      border: none;
-      border-radius: 50%;
-      background: #fff;
-      opacity: 0.25;
-      color: transparent;
-      transition: 0.3s;
-    }
-  }
-  .slick-active button {
-    opacity: 1;
   }
   &__subscribe {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 12px;
   }
   &__text {
     padding-bottom: 6px;
@@ -78,12 +45,253 @@
     border-radius: 7.5px;
     border: 1px solid #B1F83C;
     font-size: px-to-em(10);
-    line-height: lh-to-pct(13, 10);
+    line-height: lh-to-pct(14, 10);
     font-weight: 400;
     color: #fff;
     text-decoration: none;
   }
   &__btn-icon {
     margin-right: 4px;
+  }
+  .slick-slider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 304px;
+  }
+  .slick-list {
+    padding-bottom: 10px;
+  }
+  .slick-slide {
+    width: 146px; 
+    height: 114px;
+    border-radius: 20px;
+    margin: 0 6px;
+    object-fit: cover;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      width: 100%;
+      height: 1px;
+      margin: 0 4px;
+    }
+    button {
+      width: 100%;
+      height: 1px; 
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: #fff;
+      opacity: 0.25;
+      color: transparent;
+      transition: 0.3s;
+    }
+  }
+  .slick-active button {
+    opacity: 1;
+  }
+  @media screen and (min-width: 360px) {
+    &__title {
+      margin-bottom: 16px;
+      font-size: px-to-em(16);
+    }
+    &__description {
+      max-width: 320px;
+    }
+    &__subscribe {
+      justify-content: space-around;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  @media screen and (min-width: 460px) {
+    &__description {
+      max-width: 420px;
+      font-size: px-to-em(14);
+    }
+    &__subscribe {
+      max-width: 350px;
+    }
+    &__text {
+      font-size: px-to-em(12);
+    }
+    &__subscribe-btn {
+      padding: 8px 14px;
+      font-size: px-to-em(12);
+    }
+    &__btn-icon {
+      width: 16px;
+      height: auto;
+      margin-right: 8px;
+    }
+    .slick-slider {
+      max-width: 440px;
+    }
+    .slick-slide {
+      width: 214px; 
+      height: 143px;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    padding-bottom: 26px;
+    &__title {
+      margin-bottom: 20px;
+      font-size: px-to-em(20);
+    }
+    &__description {
+      max-width: 570px;
+      margin-bottom: 18px;
+      font-size: px-to-em(16);
+    }
+    &__subscribe {
+      max-width: 400px;
+    }
+    &__text {
+      font-size: px-to-em(14);
+    }
+    &__subscribe-btn {
+      font-size: px-to-em(14);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    padding-bottom: 40px;
+
+    &:nth-of-type(even) {
+      .about__area {
+        flex-direction: row;
+      }
+      .about__info {
+        align-items: flex-start;
+      }
+      .about__description {
+        text-align: start;
+      }
+      .about__subscribe {
+        align-items: flex-end;
+      }
+    }
+    &__area {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &__info {
+      align-items: flex-end;
+    }
+    &__title {
+      margin-bottom: 10px;
+      font-size: px-to-em(20);
+    }
+    &__description {
+      text-align: end;
+      width: 100%;
+      max-width: 530px;
+      margin-bottom: 16px;
+      font-size: px-to-em(16);
+    }
+    &__subscribe {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 270px;
+      padding-top: 20px;
+    }
+    &__text {
+      margin-bottom: 10px;
+      padding: 0;
+      border: none;
+      font-size: px-to-em(14);
+    }
+    &__subscribe-btn {
+      margin-left: 0;
+      transition: 0.3s;
+      &:hover {
+        border: 1px solid #FF540D;
+      }
+    }
+    .slick-slider {
+      max-width: 740px;
+    }
+    .slick-slide {
+      width: 238px; 
+      height: 160px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    &__title {
+      margin-bottom: 12px;
+      font-size: px-to-em(26);
+    }
+    &__description {
+      text-align: end;
+      width: 100%;
+      max-width: 700px;
+      margin-bottom: 20px;
+      font-size: px-to-em(18);
+    }
+    &__text {
+      margin-bottom: 12px;
+    }
+    .slick-slider {
+      max-width: 960px;
+    }
+    .slick-slide {
+      width: 302px; 
+      height: 200px;
+      margin: 0 12px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__title {
+      margin-bottom: 16px;
+      font-size: px-to-em(30);
+    }
+    &__description {
+      max-width: 670px;
+      margin-bottom: 20px;
+      font-size: px-to-em(20);
+    }
+    .slick-slider {
+      max-width: 972px;
+    }
+    .slick-slide {
+      margin: 0 15px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    &__title {
+      margin-bottom: 18px;
+      font-size: px-to-em(32);
+    }
+    &__description {
+      max-width: 770px;
+      margin-bottom: 26px;
+      font-size: px-to-em(22);
+    }
+    &__subscribe {
+      max-width: 320px;
+    }
+    &__text {
+      margin-bottom: 16px;
+      font-size: px-to-em(16);
+    }
+    &__subscribe-btn {
+      padding: 10px 42px;
+      border-radius: 12px;
+      font-size: px-to-em(16);
+    }
+    &__btn-icon {
+      width: 24px;
+      margin-right: 12px;
+    }
+    .slick-slider {
+      max-width: 1280px;
+    }
+    .slick-slide {
+      width: 302px;
+      margin: 0 11px;
+    }
   }
 }

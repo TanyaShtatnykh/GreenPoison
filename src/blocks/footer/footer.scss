@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: 192px 170px;
   background-position: bottom right;
+  overflow: hidden;
 
   &__area {
     position: relative;
@@ -11,35 +12,48 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-bottom: 30px;
+  }
+  &__link-main {
+    font-size: px-to-em(12);
+    line-height: lh-to-pct(16, 12);
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.5;
   }
   &__links-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    max-width: 172px;
   }
   &__link {
     display: flex;
-    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
     padding: 12px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1.5px solid #B1F83C;
     font-size: px-to-em(12);
     line-height: lh-to-pct(16, 12);
     font-weight: 400;
     text-decoration: none;
     color: #FFF;
+    svg {
+      margin-left: 6px;
+    }
   }
   &__logo-link {
     position: absolute;
-    // top: 22px;
-    bottom: -22px;
+    top: 0;
+    bottom: 0;
     width: 148px;
     height: auto;
     z-index: -10;
-
   }
   &__logo {
-    margin-bottom: -22px;
     width: 148px;
     height: auto;
     object-fit: contain;
@@ -47,5 +61,178 @@
   }
   &__menu-list {
     display: none;
+  }
+  @media screen and (min-width: 360px) {
+    &__links-list {
+      max-width: 192px;
+    }
+    &__link-main {
+      font-size: px-to-em(14);
+    }
+    &__link {
+      margin-top: 12px;
+      font-size: px-to-em(14);
+      svg {
+        margin-left: 6px;
+      }
+    }
+  }
+  @media screen and (min-width: 576px) {
+    &__links-list {
+      max-width: 238px;
+    }
+    &__link-main {
+      font-size: px-to-em(18);
+    }
+    &__link {
+      margin-top: 14px;
+      font-size: px-to-em(18);
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-left: 6px;
+      }
+    }
+    &__logo-link {
+      width: 166px;
+    }
+    &__logo {
+      width: 166px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 970px;
+    margin: 0 auto;
+    background-size: 240px auto;
+    &__area {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 12px 20px;
+    }
+    &__link-main {
+      display: none;
+    }
+    &__links-list {
+      max-width: 242px;
+    }
+    &__link {
+      transition: 0.3s;
+      svg {
+        margin-left: 8px;
+      }
+      &:hover {
+        border: 1.5px solid #FF540D;
+      }
+    }
+    &__logo-link {
+      position: relative;
+      width: 166px;
+      z-index: 0;
+    }
+    &__logo {
+      width: 166px;
+      opacity: 1;
+    }
+    &__menu-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 30px;
+    }
+    &__menu-item:nth-child(n+2) {
+      margin-top: 60px;
+    }
+    &__menu-link {
+      font-size: px-to-em(16);
+      line-height: lh-to-pct(21, 16);
+      font-weight: 400;
+      text-decoration: none;
+      color: #FFF;
+      transition: 0.3s;
+      &:hover {
+        color: #FF540D;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    background-size: 360px auto;
+    &__links-list {
+      max-width: 262px;
+    }
+    &__link {
+      margin-top: 16px;
+      font-size: px-to-em(20);
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    &__logo-link {
+      position: relative;
+      width: 200px;
+    }
+    &__logo {
+      width: 200px;
+      opacity: 1;
+    }
+    &__menu-list {
+      padding-right: 60px;
+    }
+    &__menu-item:nth-child(n+2) {
+      margin-top: 60px;
+    }
+    &__menu-link {
+      font-size: px-to-em(20);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 1140px;
+    background-size: 440px auto;
+    &__area {
+      padding: 0 80px 20px;
+    }
+    &__links-list {
+      max-width: 310px;
+    }
+    &__link {
+      margin-top: 20px;
+      font-size: px-to-em(24);
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    &__logo-link {
+      position: relative;
+      width: 260px;
+    }
+    &__logo {
+      width: 260px;
+    }
+    &__menu-item:nth-child(n+2) {
+      margin-top: 70px;
+    }
+    &__menu-link {
+      font-size: px-to-em(24);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    background-size: 440px auto;
+    &__links-list {
+      max-width: 350px;
+    }
+    &__link {
+      margin-top: 26px;
+      font-size: px-to-em(26);
+      svg {
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &__menu-link {
+      font-size: px-to-em(26);
+    }
   }
 }

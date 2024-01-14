@@ -6,4 +6,8 @@ $(function () {
         $(this).toggleClass('header__burger-btn--open');
         $(menu).toggleClass('header__menu--open');
     });
+    $('.header__menu-link').on('click', function () {
+        $(burgerBtn).removeClass('header__burger-btn--open');
+        $(menu).removeClass('header__menu--open');
+    });
 });

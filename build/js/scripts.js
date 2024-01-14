@@ -6,7 +6,25 @@ $('.about__slider').slick({
   dots: true,
   variableWidth: true,
   autoplay: true,
-  autoplaySpeed: 2000
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 1400,
+      settings: {
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      }
+    },
+  ]
 });
 
 const inputName = document.querySelector('.contacts__field--name');
@@ -43,6 +61,10 @@ $(function () {
     $(burgerBtn).on('click', function () {
         $(this).toggleClass('header__burger-btn--open');
         $(menu).toggleClass('header__menu--open');
+    });
+    $('.header__menu-link').on('click', function () {
+        $(burgerBtn).removeClass('header__burger-btn--open');
+        $(menu).removeClass('header__menu--open');
     });
 });
 

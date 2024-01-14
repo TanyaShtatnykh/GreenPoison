@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 0 14px 20px;
+  padding: 0 14px 40px;
 
   &__title {
     margin-bottom: 12px;
     font-size: px-to-em(24);
     line-height: lh-to-pct(31, 24);
     font-weight: 900;
-    color: #FF540D;
+    color: #B1F83C;
     text-transform: uppercase;
     text-align: center;
   }
@@ -29,6 +29,10 @@
     color: #FF540D;
     text-align: center;
   }
+  &__link-container {
+    display: flex;
+    align-items: center;
+  }
   &__link {
     padding: 12px 43px;
     border-radius: 10px;
@@ -38,5 +42,94 @@
     font-weight: 500;
     color: #ffffff;
     text-decoration: none;
+  }
+  @media screen and (min-width: 360px) {
+    &__action {
+      font-size: px-to-em(10);
+    }
+    &__link {
+      font-size: px-to-em(14);
+    }
+  }
+  @media screen and (min-width: 576px) {
+    &__title {
+      margin-bottom: 16px;
+      font-size: px-to-em(32);
+    }
+    &__action {
+      font-size: px-to-em(16);
+    }
+    &__text {
+      margin-bottom: 24px;
+      font-size: px-to-em(20);
+    }
+    &__link {
+      font-size: px-to-em(18);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 994px;
+    &__title {
+      font-size: px-to-em(36);
+    }
+    &__link {
+      font-size: px-to-em(20);
+      transition: 0.3s;
+      &:hover {
+        border: 1.5px solid #FF540D;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    &__title {
+      margin-bottom: 26px;
+      font-size: px-to-em(42);
+    }
+    &__action {
+      font-size: px-to-em(22);
+    }
+    &__text {
+      margin-bottom: 40px;
+      font-size: px-to-em(26);
+    }
+    &__link-container {
+      align-self: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      &::before {
+        content: "";
+        width: 72%;
+        height: 1px;
+        background-color: #fff;
+      }
+    }
+    &__link {
+      font-size: px-to-em(20);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+    padding: 0 80px 60px;
+    &__title {
+      font-size: px-to-em(52);
+    }
+    &__text {
+      font-size: px-to-em(30);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    &__title {
+      font-size: px-to-em(60);
+    }
+    &__text {
+      font-size: px-to-em(32);
+    }
+    &__link-container {
+      &::before {
+        content: "";
+        width: 78%;
+      }
+    }
   }
 }

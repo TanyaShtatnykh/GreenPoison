@@ -1,13 +1,22 @@
 mixin footer(modifier)
   footer.footer&attributes(attributes)
     .footer__area
-      a.footer__link-main(href="#") На главную
+      a.footer__link-main(href="#header") На главную
       ul.footer__links-list
-        li.footer__link-item: a.footer__link.footer__link--reserve(href="#") Забронировать стол
-        li.footer__link-item: a.footer__link.footer__link--ig(href="#") Инстаграм
-        li.footer__link-item: a.footer__link.footer__link--vk(href="#") Вконтакте
-      a.footer__logo-link: img.footer__logo(src="img/logo.svg", alt="Logo")
+        li.footer__link-item
+          a.footer__link.footer__link(href="#reserve") 
+            | Забронировать стол
+            include ./img/footer-arrow.svg
+        li.footer__link-item
+          a.footer__link.footer__link(href="#") 
+            | Инстаграм
+            include ./img/footer-ig.svg
+        li.footer__link-item
+          a.footer__link.footer__link(href="#")
+            | Вконтакте
+            include ./img/footer-vk.svg
+      a.footer__logo-link(href="/"): img.footer__logo(src="img/logo.svg", alt="Logo")
       ul.footer__menu-list
-          li.footer__menu-item: a.footer__menu-link(href="#") О нас
+          li.footer__menu-item: a.footer__menu-link(href="#concept") О нас
           li.footer__menu-item: a.footer__menu-link(href="#") Меню
-          li.footer__menu-item: a.footer__menu-link(href="#") Контакты
+          li.footer__menu-item: a.footer__menu-link(href="#contacts") Контакты
