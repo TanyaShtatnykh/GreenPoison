@@ -45,13 +45,13 @@
       &::after {
         content: "Введите телефон в формате 8хххххххххх или +7хххххххххх";
         position: absolute;
-        top: 90px;
+        top: 91px;
         left: 3px;
         display: block;
         width: 100%;
         font-size: px-to-em(8);
         line-height: lh-to-pct(11, 8);
-        color:#B1F83C;
+        color:#FF540D;
       }
     }
   }
@@ -259,6 +259,13 @@
       margin-bottom: 16px;
       font-size: px-to-em(20);
     }
+    &__form {
+      &--disabled {
+        &::after {
+          top: 101px;
+        }
+      }
+    }
     &__field {
       font-size: px-to-em(16);
     }
@@ -365,6 +372,13 @@
     &__subtitle {
       font-size: px-to-em(26);
     }
+    &__form {
+      &--disabled {
+        &::after {
+          top: 107px;
+        }
+      }
+    }
     &__field {
       font-size: px-to-em(18);
     }
@@ -426,6 +440,14 @@
     &__subtitle {
       font-size: px-to-em(30);
     }
+    &__form {
+      &--disabled {
+        &::after {
+          top: 115px;
+          font-size: px-to-em(9);
+        }
+      }
+    }
     &__field {
       margin-bottom: 16px;
       font-size: px-to-em(20);
@@ -460,6 +482,14 @@
     }
     &__subtitle {
       font-size: px-to-em(32);
+    }
+    &__form {
+      &--disabled {
+        &::after {
+          top: 121px;
+          font-size: px-to-em(10);
+        }
+      }
     }
     &__field {
       margin-bottom: 18px;
