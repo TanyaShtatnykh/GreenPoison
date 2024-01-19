@@ -16,7 +16,7 @@ mixin contacts(modifier)
             button.contacts__reserve-btn(type="submit") 
               | Забронировать стол
               include ./img/arrow.svg
-        img.contacts__map(src="img/map.png", alt="")
+        a.contacts__map(href="#"): img.contacts__map-photo(src="img/map.png", alt="")
       ul.contacts__list
         li.contacts__item
           h3.contacts__subtitle Звоните нам

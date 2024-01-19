@@ -113,7 +113,7 @@
       display: none;
     }
     &__links-list {
-      max-width: 246px;
+      max-width: 34%;
     }
     &__link {
       transition: 0.3s;
@@ -126,18 +126,16 @@
     }
     &__logo-link {
       position: relative;
-      width: 166px;
       z-index: 0;
     }
     &__logo {
-      width: 166px;
       opacity: 1;
     }
     &__menu-list {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-right: 30px;
+      width: 32%;
     }
     &__menu-item:nth-child(n+2) {
       margin-top: 60px;
@@ -157,7 +155,7 @@
   @media screen and (min-width: 992px) {
     background-size: 360px auto;
     &__links-list {
-      max-width: 268px;
+      max-width: 28%;
     }
     &__link {
       margin-top: 16px;
@@ -168,7 +166,6 @@
       }
     }
     &__logo-link {
-      position: relative;
       width: 200px;
     }
     &__logo {
@@ -176,7 +173,7 @@
       opacity: 1;
     }
     &__menu-list {
-      padding-right: 60px;
+      width: 28%;
     }
     &__menu-item:nth-child(n+2) {
       margin-top: 60px;
@@ -192,22 +189,24 @@
       padding: 0 80px 20px;
     }
     &__links-list {
-      max-width: 312px;
+      max-width: 30%;
     }
     &__link {
       margin-top: 20px;
-      font-size: px-to-em(24);
+      font-size: px-to-em(22);
       svg {
         width: 22px;
         height: 22px;
       }
     }
     &__logo-link {
-      position: relative;
-      width: 260px;
+      width: 230px;
     }
     &__logo {
-      width: 260px;
+      width: 230px;
+    }
+    &__menu-list {
+      width: 30%;
     }
     &__menu-item:nth-child(n+2) {
       margin-top: 70px;
@@ -219,9 +218,6 @@
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
     background-size: 440px auto;
-    &__links-list {
-      max-width: 350px;
-    }
     &__link {
       margin-top: 26px;
       font-size: px-to-em(26);

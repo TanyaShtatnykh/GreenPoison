@@ -44,6 +44,7 @@
     font-weight: 400;
     line-height: lh-to-pct(13, 10);
     text-align: center;
+    transition: 0.3s;
   }
   &__description {
     max-width: 100px;
@@ -62,6 +63,64 @@
     .product__content {
       visibility: visible;
       transform: translateY(0);
+    }
+  }
+  @media screen and (min-width: 576px) {
+    &__block {
+      &--photo {
+        width: 150px;
+        height: 190px;
+        margin-bottom: 10px;
+      }
+    }
+    &__photo {
+      height: 190px;
+    }
+    &__name {
+      margin-bottom: 8px;
+      font-size: px-to-em(14);
+    }
+    &__description {
+      max-width: 130px;
+      font-size: px-to-em(12);
+    }
+    &__price {
+      font-size: px-to-em(12);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:hover {
+      .product__name {
+        color: #FF540D;
+      }
+    }
+    &__block {
+      &--photo {
+        width: 190px;
+        height: 240px;
+        margin-bottom: 10px;
+      }
+    }
+    &__photo {
+      height: 240px;
+    }
+    &__name {
+      font-size: px-to-em(16);
+    }
+    &__price {
+      font-size: px-to-em(14);
+    }
+  }
+  @media screen and (min-width: 992px) {
+    &__block {
+      &--photo {
+        width: 204px;
+        height: 260px;
+        margin-bottom: 10px;
+      }
+    }
+    &__photo {
+      height: 260px;
     }
   }
 }

@@ -1,6 +1,7 @@
 .lunch {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1280px;
+  margin: 0 auto;
   background-image: url(../img/bottle.svg);
   background-size: 182px 314px;
   background-position: center right;
@@ -351,9 +352,18 @@
   }
   @media screen and (min-width: 1440px) {
     background-size: 440px auto;
+    &__area {
+      max-width: 1280px;
+    }
     &__title {
       margin-bottom: 20px;
       font-size: px-to-em(32);
+    }
+    &__left-block {
+      width: 36%;
+      grid-template-columns: 46px auto;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #FF540D;
     }
     &__discount-text {
       font-size: px-to-em(24);
